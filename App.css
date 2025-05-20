@@ -1,0 +1,112 @@
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+}
+
+.window {
+  position: absolute;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(15px);
+  background: rgba(255, 255, 255, 0.06);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.window-header {
+  background: linear-gradient(135deg, #1e40af, #7c3aed);
+  color: white;
+  padding: 8px 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  user-select: none;
+  font-weight: 500;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.window-content {
+  padding: 16px;
+  background: rgba(255, 255, 255, 0.03);
+  color: #e5e7eb;
+  height: calc(100% - 32px);
+  overflow-y: auto;
+  font-family: 'Inter', sans-serif;
+}
+
+.dark .window {
+  background: rgba(17, 24, 39, 0.06);
+}
+
+.dark .window-content {
+  background: rgba(17, 24, 39, 0.03);
+  color: #d1d5db;
+}
+
+.high-contrast .window {
+  border: 2px solid #00ff00;
+}
+
+.high-contrast .window-content {
+  color: #00ff00;
+  background: #000000;
+}
+
+.context-menu {
+  position: absolute;
+  background: rgba(17, 24, 39, 0.95);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  color: white;
+  z-index: 10000;
+  padding: 6px 0;
+  animation: fadeIn 0.15s ease;
+}
+
+.context-menu-item {
+  padding: 8px 16px;
+  cursor: pointer;
+  transition: background 0.15s ease;
+  font-size: 13px;
+}
+
+.context-menu-item:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.notification {
+  background: rgba(17, 24, 39, 0.95);
+  backdrop-filter: blur(8px);
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  color: white;
+  padding: 8px 12px;
+  margin-bottom: 8px;
+  animation: slideIn 0.2s ease;
+}
+
+.widget {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  padding: 10px;
+  margin: 6px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.widget:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+@keyframes slideIn {
+  from { opacity: 0; transform: translateX(10px); }
+  to { opacity: 1; transform: translateX(0); }
+}
