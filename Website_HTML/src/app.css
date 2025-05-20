@@ -1,0 +1,27 @@
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+}
+
+.window {
+  position: absolute;
+  border: 1px solid #4b5563;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background: white;
+  overflow: hidden;
+}
+
+.window-header {
+  background: #1f2937;
+  color: white;
+  padding: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.window-content {
+  padding: 16px;
+}
