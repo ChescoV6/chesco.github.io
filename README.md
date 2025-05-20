@@ -1,13 +1,16 @@
 # ChescoOS
 
-A sleek, user-friendly desktop environment in the browser, built by Chesco. 🚀
+The refined futuristic mock OS in the browser, built by Chesco. ✨
 
 ## Features
-- Modern, dark-themed UI with Tailwind CSS
-- Draggable and minimizable windows
-- File Explorer with basic file/folder display
-- Customizable taskbar
-- Smooth animations and responsive design
+- Clean, evenly spaced app grid with consistent icons
+- Elegant holographic UI with softer gradients and shadows
+- Smarter widget placement and refined taskbar
+- Resizable windows with edge-snapping
+- Notification center and customizable widgets
+- File Explorer, Terminal, and Settings with polished layouts
+- Apps: Clock, Browser, Music Player, Image Viewer, and more
+- Smooth transitions and high-contrast support
 
 ## Getting Started
 1. Clone the repo:
